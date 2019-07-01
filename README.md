@@ -25,3 +25,14 @@ Given the definitions that `l1`  loss is ![](http://latex.codecogs.com/gif.latex
 Normally large outliers have large residuals, and square loss gets much more effected by outliers than `l1` loss, that is, the penalty is huge if the error is large. 
 
 Because of the special feature of this dataset, which is high in sparsity,  the 0's  in the sparse matrix will pull the loss function close to the x-axis; on the other hand, the reduction in `l1` norm is always equal to *δ*, regardless of the quantity being penalized.  Therefore choose `l1` penalty over `l2`. 
+
+---
+
+### Dataset
+
+[mnist_784 ](https://www.openml.org/d/554)
+
+>It is a subset of a larger set available from NIST. The digits have  been size-normalized and centered in a fixed-size image. It is a good  database for people who want to try learning techniques and pattern  recognition methods on real-world data while spending minimal efforts on  preprocessing and formatting. The original black and white (bilevel)  images from NIST were size normalized to fit in a 20x20 pixel box while  preserving their aspect ratio. The resulting images contain grey levels  as a result of the anti-aliasing technique used by the normalization  algorithm. the images were centered in a 28x28 image by computing the  center of mass of the pixels, and translating the image so as to  position this point at the center of the 28x28 field.
+>
+>With some classification methods (particularly template-based  methods, such as SVM and K-nearest neighbors), the error rate improves  when the digits are centered by bounding box rather than center of mass.  If you do this kind of pre-processing, you should report it in your  publications. The MNIST database was constructed from NIST's NIST  originally designated SD-3 as their training set and SD-1 as their test  set. However, SD-3 is much cleaner and easier to recognize than SD-1.  The reason for this can be found on the fact that SD-3 was collected  among Census Bureau employees, while SD-1 was collected among  high-school students. Drawing sensible conclusions from learning  experiments requires that the result be independent of the choice of  training set and test among the complete set of samples. Therefore it  was necessary to build a new database by mixing NIST's datasets.
+
