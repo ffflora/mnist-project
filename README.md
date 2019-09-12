@@ -40,6 +40,13 @@ Because of the special feature of this dataset, which is high in sparsity,  the 
 
 
 
+---
+### Neural Network 
+
+In the `recognize_digit` file, I used DNN method which is based on PaddlePaddle. 
+This is a three layers multiple layer perceptron; two hidden layers which the sizes are 100, and the size of the output layer is 10, since the labels we have on hand is from 0-9. The activation function is Softmax, thus the output layer is also considered as a classifier. Therefore the structure of the network is: input layer ->> hidden layer ->> hidden layer ->> output layer.   
+[The report could be found here](https://kyso.io/FFFlora/mnist-project/file/recognize_digit.ipynb)
+
 
 
 
@@ -52,6 +59,5 @@ Because of the special feature of this dataset, which is high in sparsity,  the 
 >It is a subset of a larger set available from NIST. The digits have  been size-normalized and centered in a fixed-size image. It is a good  database for people who want to try learning techniques and pattern  recognition methods on real-world data while spending minimal efforts on  preprocessing and formatting. The original black and white (bilevel)  images from NIST were size normalized to fit in a 20x20 pixel box while  preserving their aspect ratio. The resulting images contain grey levels  as a result of the anti-aliasing technique used by the normalization  algorithm. the images were centered in a 28x28 image by computing the  center of mass of the pixels, and translating the image so as to  position this point at the center of the 28x28 field.
 >
 >With some classification methods (particularly template-based  methods, such as SVM and K-nearest neighbors), the error rate improves  when the digits are centered by bounding box rather than center of mass.  If you do this kind of pre-processing, you should report it in your  publications. The MNIST database was constructed from NIST's NIST  originally designated SD-3 as their training set and SD-1 as their test  set. However, SD-3 is much cleaner and easier to recognize than SD-1.  The reason for this can be found on the fact that SD-3 was collected  among Census Bureau employees, while SD-1 was collected among  high-school students. Drawing sensible conclusions from learning  experiments requires that the result be independent of the choice of  training set and test among the complete set of samples. Therefore it  was necessary to build a new database by mixing NIST's datasets.
-
 
 
