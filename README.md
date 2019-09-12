@@ -1,3 +1,14 @@
+### Neural Network 
+
+In the `recognize_digit` file, I used DNN method which is based on PaddlePaddle. 
+This is a three layers multiple layer perceptron; two hidden layers which the sizes are 100, and the size of the output layer is 10, since the labels we have on hand is from 0-9. The activation function is Softmax, thus the output layer is also considered as a classifier. Therefore the structure of the network is: input layer ->> hidden layer ->> hidden layer ->> output layer.   
+[The report could be found here](https://kyso.io/FFFlora/mnist-project/file/recognize_digit.ipynb)
+
+
+--- 
+
+
+
 ### Logistic Regression vs XGBoost
 
 In this project, I first use Logistic Regression to have a taste of how the classification goes, by that I have an accuracy of 83%; and then I try to use XGBoost, with the `xglinear` booster I have 85% accuracy, that is ~2% increase. Then I try the tree booster in XGBoost, finally reach 91.8% accuracy.
@@ -37,15 +48,6 @@ Normally large outliers have large residuals, and square loss gets much more eff
 
 Because of the special feature of this dataset, which is high in sparsity,  the 0's  in the sparse matrix will pull the loss function close to the x-axis; on the other hand, the reduction in `l1` norm is always equal to *δ*, regardless of the quantity being penalized.  Therefore choose `l1` penalty over `l2`. 
 
-
-
-
----
-### Neural Network 
-
-In the `recognize_digit` file, I used DNN method which is based on PaddlePaddle. 
-This is a three layers multiple layer perceptron; two hidden layers which the sizes are 100, and the size of the output layer is 10, since the labels we have on hand is from 0-9. The activation function is Softmax, thus the output layer is also considered as a classifier. Therefore the structure of the network is: input layer ->> hidden layer ->> hidden layer ->> output layer.   
-[The report could be found here](https://kyso.io/FFFlora/mnist-project/file/recognize_digit.ipynb)
 
 
 
